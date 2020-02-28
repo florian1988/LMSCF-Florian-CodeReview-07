@@ -1,1 +1,38 @@
-<p>blog works!</p>
+<div class="container-fluid text-center  blogBg">
+	<h1>Holiday blog</h1>
+
+
+ <form [formGroup]="inputBlog" (ngSubmit)="onSubmit()">
+  <div class="">
+    <label for="exampleInput">Name:</label>
+
+   <input type="text" class="form-control offset-5 col-sm-2 " formControlName="name" > 
+  </div>
+  <div class="form-group ">
+    <label for="exampleInput">your text:</label>
+    <input type="text" class="form-control offset-3 col-sm-6" formControlName="text" > 
+  </div>
+  <button type="submit" class="btn btn-light m-4" value="Submit">Submit</button>
+</form>
+</div>
+<br>
+<div class= "container-fluid row d-flex justify-content-start ">
+	<div *ngFor="let x of out">
+		<div class="card bg-light mb-3 m-4" style="max-width: 18rem;">
+		  <div class="card-header name">this is from: {{x.name}}</div>
+		  <div class="card-body">
+		   
+		    <p class="card-text text">{{x.text}}</p>
+		  </div>
+		</div>
+
+</div>
+</div>
+
+<!-- <div class="col-sm-5 border">
+    	<h5 class="name"> Name: {{x.name}}</h5>
+    	<h3>Text:</h3>
+    	<p class="text">{{x.text}}</p>
+	</div>
+
+ -->
