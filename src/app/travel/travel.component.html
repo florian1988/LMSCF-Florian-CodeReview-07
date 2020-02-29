@@ -1,0 +1,42 @@
+<div class="container-fluid bg-light jumbo ">
+  <div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">Travel offering's</h1>
+    <p class="lead">Find your next adventure with Navbar treveling. <br>Wild at heart: classic romantic trips with an adventurous twist
+Wild at heart: classic romantic trips with an adventurous twist </p>
+  </div>
+</div>
+</div>
+
+
+
+
+<div class="container-fluid row justify-content-around  xx">
+  <div *ngFor="let travel of travelList">
+    <div class="card mt-4" style="width: 20rem;">
+      <img src="{{travel.Image}}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title"> {{travel.Destination}} </h5>
+        <p class="card-text"> {{travel.Discription}} </p>
+      </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Start Date: {{travel.StartDate}}</li>
+          <li class="list-group-item">Duration: {{travel.Duration}} Day's </li>
+          <li class="list-group-item">Price: {{travel.Price}}€ </li>
+        </ul>
+      <div class="card-body">
+        <a href="#" class="card-link">To the Shop</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid bg-light jumbo ">
+  <div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">Travel offering's</h1>
+    <p class="lead">Find your next adventure with Navbar treveling. <br>Wild at heart: classic romantic trips with an adventurous twist
+Wild at heart: classic romantic trips with an adventurous twist </p>
+  </div>
+</div>
+</div>

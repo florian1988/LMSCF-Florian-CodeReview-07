@@ -1,0 +1,51 @@
+export const travelList = [
+{
+	Id: 1,
+	Destination: "Algarve",
+	Image: "/assets/IMG/algarve.jpg", 
+	Description: "Die Algarve ist die südlichste Region Kontinentalportugals. Sie hat eine Fläche von 4989 km² und rund 441.000 Einwohner. Die Algarve bildet eine von sieben Regionen Portugals.",
+	StartDate: '12.12.2020',
+	Duration: 3,
+	Price: 120,	
+},{
+	Id: 2,
+	Destination: "Athen",
+	Image: "/assets/IMG/athen.jpg", 
+	Description: "Athen ist die Hauptstadt Griechenlands. Die Stadt bildete außerdem das Zentrum des antiken Griechenlands, das zu seiner Zeit eine einflussreiche Kultur und ein wichtiges Reich war.",
+	StartDate: '06.06.2020',
+	Duration: 5,
+	Price: 90,	
+},{
+	Id: 3,
+	Destination: "Bali",
+	Image: "/assets/IMG/bali.jpg", 
+	Description: "Bali ist eine indonesische Insel, die für ihre bewaldeten Vulkanberge, die typischen Reisfelder, Strände und Korallenriffe bekannt ist." ,
+	StartDate: '12.02.2021',
+	Duration: 2,
+	Price: 300,	
+},{
+	Id: 4,
+	Destination: "Tunesien",
+	Image: "/assets/IMG/tunesien.jpg", 
+	Description: 'Tunesien ist ein an das Mittelmeer und die Sahara grenzender Staat in Nordafrika. Das Bardo Museum in der Hauptstadt Tunis zeigt archäologische Ausstellungen von römischen Mosaiken bis zu islamischer Kunst.',
+	StartDate: '25.04.2020',
+	Duration: 5,
+	Price: 100,	
+},{
+	Id: 5,
+	Destination: "Malorca",
+	Image: "/assets/IMG/malorca.jpg", 
+	Description: 'Mallorca ist eine der spanischen Baleareninseln im Mittelmeer. Sie ist für ihre Badeorte, geschützten Buchten, Kalksteinberge sowie Überreste aus römischer und maurischer Zeit bekannt.',
+	StartDate: '30.11.2020',
+	Duration: 3,
+	Price: 200,	
+},{
+	Id: 6,
+	Destination: "Kalabrien",
+	Image: '/assets/IMG/kalabrien.jpg', 
+	Description: 'Kalabrien liegt im Südwesten Italiens und bildet den "Zeh" der stiefelförmigen Halbinsel. Die sonnenverwöhnte Region ist geprägt durch schroffe Berge, altmodische Dörfer und eine abwechslungsreiche Küste mit zahlreichen beliebten Stränden.',
+	StartDate: '19.07.2020',
+	Duration: 6,
+	Price: 150,	
+}
+];
