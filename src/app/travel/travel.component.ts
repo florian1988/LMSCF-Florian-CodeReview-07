@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {travelList} from '../theList';
+import {CartService} from '../cart.service';
 
 
 @Component({
@@ -7,12 +8,15 @@ import {travelList} from '../theList';
   templateUrl: './travel.component.html',
   styleUrls: ['./travel.component.css']
 })
+
 export class TravelComponent implements OnInit {
  travelList = travelList;
- 
+
   constructor() { }
 
-  ngOnInit() {
-  }
+ 	
 
+  ngOnInit() {
+  	
+}
 }

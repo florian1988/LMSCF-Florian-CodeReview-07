@@ -12,21 +12,22 @@ Wild at heart: classic romantic trips with an adventurous twist </p>
 
 
 <div class="container-fluid row justify-content-around  xx">
-  <div *ngFor="let travel of travelList">
+  <div *ngFor="let travel of travelList ; index as travelId">
+    
     <div class="card mt-4" style="width: 20rem;">
+        <a [routerLink]="['/travelList', travelId]"> 
       <img src="{{travel.Image}}" class="card-img-top" alt="...">
+        </a>
       <div class="card-body">
+      <a [routerLink]="['/travelList', travelId]">   
         <h5 class="card-title"> {{travel.Destination}} </h5>
-        <p class="card-text"> {{travel.Discription}} </p>
+        </a>
+       
       </div>
         <ul class="list-group list-group-flush">
           <li class="list-group-item">Start Date: {{travel.StartDate}}</li>
-          <li class="list-group-item">Duration: {{travel.Duration}} Day's </li>
           <li class="list-group-item">Price: {{travel.Price}}€ </li>
-        </ul>
-      <div class="card-body">
-        <a href="#" class="card-link">To the Shop</a>
-      </div>
+        </ul>   
     </div>
   </div>
 </div>

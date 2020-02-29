@@ -1,0 +1,23 @@
+<div class="jumbotron">
+  <h1 class="display-4">Shopping Cart</h1>
+  <p class="lead">Schnell, sicher und günstig Urlaub buchen</p>
+  <hr class="my-4">
+  <p>Wier bieten Ihnen mehrere Zahlungsarten an die hier nicht vermerkt sind. </p>
+<button type="button" class="btn btn-primary m-4">Buy</button>
+
+
+</div>
+
+
+
+<div *ngFor="let item of items">
+<div class="jumbotron jumbotron-fluid text-center">
+  <div class="container ">
+    <h1 class="display-4">{{item.Destination}}</h1>
+    <p class="lead">Price:{{item.Price}}€</p>
+    <img class="" src="{{item.Image}}" alt="">
+  </div>
+  
+</div>
+
+</div>

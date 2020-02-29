@@ -1,0 +1,21 @@
+
+
+<div *ngIf="travel"> 
+	<div class="jumbotron text-center">
+	<img src="{{travel.Image}}" class="" alt="...">
+	  <h1 class="display-4">{{travel.Destination}}</h1>
+	  <p class="lead">{{travel.Description}}</p>
+	  <hr class="my-4">
+
+	  	<p>Start Date: {{travel.StartDate}}</p>
+	  	<p>Duration: {{travel.Duration}} Day's</p>
+	  	<p>Price: {{travel.Price}}€</p>
+
+	  <a (click)="addToCart(travel)"class="btn btn-primary btn-lg" role="button">Buy</a>
+	</div>
+</div>
+
+
+
+
+
